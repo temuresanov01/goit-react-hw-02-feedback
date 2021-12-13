@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 // import feedback from './feedback/feedback';
 
 // function App() {
@@ -28,10 +28,10 @@ import PropTypes from 'prop-types';
 
 // компоненты
 
-import feedbackOptions from './feedbackOptions/feedbackOptions';
-import statistics from './statistics/statistics';
-import notification from './notification/';
-import section from './section/section';
+import FeedbackOptions from './components/FeedbackOptions/feedbackOptions';
+import Statistics from './components/Statistics/statistics';
+import Notification from './components/Notification/notification';
+import Section from './components/Section/section';
 
 // данные
 
@@ -70,15 +70,17 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <section title="Please leave feedback">
-          <feedbackOptions
+        {/* <Section title="Please leave feedback"> */}
+        <Section title="Пожалуйста, оставьте отзыв">
+          <FeedbackOptions
             options={Object.keys(this.state)}
             onLeaveFeedback={this.onClickBtn}
           />
-        </section>
-        <section title="statistics">
+        </Section>
+        {/* <Section title="Statistics"> */}
+        <Section title="Статистика">
           {this.countTotalFeedback() > 0 ? (
-            <statistics
+            <Statistics
               good={this.state.good}
               neutral={this.state.neutral}
               bad={this.state.bad}
@@ -86,9 +88,10 @@ export default class App extends Component {
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
           ) : (
-            <notification message="No feedback given" />
+            // <Notification message="No feedback given" />
+            <Notification message="нет ни одного отзыва" />
           )}
-        </section>
+        </Section>
       </>
     );
   }
