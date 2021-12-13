@@ -1,7 +1,7 @@
-import styles from './notification.module.css';
+import s from './notification.module.css';
 
 export default function Notification ({ message }) {
   return (
-      <p className={styles.notification}>{message}</p>
+      <p className={s.notification}>{message}</p>
   );
 }
