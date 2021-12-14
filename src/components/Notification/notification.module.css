@@ -1,0 +1,45 @@
+/* .notification {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-style: normal;
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: slide_background 15s linear infinite;
+}
+
+@keyframes slide_background {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 100% 0px;
+  }
+} */
+
+.notification {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-style: normal;
+  color: transparent;
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: slide_background 80s linear infinite;
+}
+@keyframes slide_background {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 100% 0px;
+  }
+}
