@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_513418784_146641.jpg);
+  background-size: cover;
 }
 
 img {
